@@ -1,2 +1,2 @@
-STAR-Player-iOS
+STAR Player for iOS
 ===============
