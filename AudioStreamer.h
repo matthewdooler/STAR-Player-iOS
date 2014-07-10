@@ -20,7 +20,7 @@
 #endif
 #else
 #import <Cocoa/Cocoa.h>
-#endif TARGET_OS_IPHONE
+#endif
 
 #import <Foundation/Foundation.h>
 #include <pthread.h>
@@ -151,7 +151,7 @@ extern NSString * const ASUpdateMetadataNotification;
 	UInt32 bitRate;				// Bits per second in the file
 	NSInteger dataOffset;		// Offset of the first audio packet in the stream
 	NSInteger fileLength;		// Length of the file in bytes
-	NSInteger seekByteOffset;	// Seek offset within the file in bytes
+	long seekByteOffset;	// Seek offset within the file in bytes
 	UInt64 audioDataByteCount;  // Used when the actual number of audio bytes in
     // the file is known (more accurate than assuming
     // the whole file is audio)
