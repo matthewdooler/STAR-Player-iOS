@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		6C1B2AEE198352EF00A46FFC /* 201407play.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C1B2AED198352EF00A46FFC /* 201407play.png */; };
 		6C1B2AF0198354EA00A46FFC /* 201407playSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C1B2AEF198354EA00A46FFC /* 201407playSmall.png */; };
+		6C751D8C19837D4E00E2EE93 /* PlayButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C751D8B19837D4E00E2EE93 /* PlayButton.png */; };
+		6C751D8E19837D8200E2EE93 /* PlayButtonSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C751D8D19837D8200E2EE93 /* PlayButtonSmall.png */; };
+		6C751D9119837FDE00E2EE93 /* PauseButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C751D8F19837FDE00E2EE93 /* PauseButton.png */; };
+		6C751D9219837FDE00E2EE93 /* PauseButtonSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C751D9019837FDE00E2EE93 /* PauseButtonSmall.png */; };
 		C97740A0166E469B00DAD081 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C977409F166E469B00DAD081 /* AVFoundation.framework */; };
 		C97740A7166E491700DAD081 /* UIDevice+Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = C97740A6166E48ED00DAD081 /* UIDevice+Hardware.m */; };
 		C9DF927A1649046D00F7B5F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DF92791649046D00F7B5F8 /* UIKit.framework */; };
@@ -50,6 +54,10 @@
 /* Begin PBXFileReference section */
 		6C1B2AED198352EF00A46FFC /* 201407play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 201407play.png; sourceTree = "<group>"; };
 		6C1B2AEF198354EA00A46FFC /* 201407playSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 201407playSmall.png; sourceTree = "<group>"; };
+		6C751D8B19837D4E00E2EE93 /* PlayButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayButton.png; sourceTree = "<group>"; };
+		6C751D8D19837D8200E2EE93 /* PlayButtonSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayButtonSmall.png; sourceTree = "<group>"; };
+		6C751D8F19837FDE00E2EE93 /* PauseButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PauseButton.png; sourceTree = "<group>"; };
+		6C751D9019837FDE00E2EE93 /* PauseButtonSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PauseButtonSmall.png; sourceTree = "<group>"; };
 		C977409F166E469B00DAD081 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C97740A5166E48ED00DAD081 /* UIDevice+Hardware.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Hardware.h"; sourceTree = "<group>"; };
 		C97740A6166E48ED00DAD081 /* UIDevice+Hardware.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Hardware.m"; sourceTree = "<group>"; };
@@ -141,6 +149,10 @@
 				C9DF92A4164904A600F7B5F8 /* play-button.png */,
 				6C1B2AED198352EF00A46FFC /* 201407play.png */,
 				6C1B2AEF198354EA00A46FFC /* 201407playSmall.png */,
+				6C751D8B19837D4E00E2EE93 /* PlayButton.png */,
+				6C751D8D19837D8200E2EE93 /* PlayButtonSmall.png */,
+				6C751D8F19837FDE00E2EE93 /* PauseButton.png */,
+				6C751D9019837FDE00E2EE93 /* PauseButtonSmall.png */,
 				C9DF927F1649046D00F7B5F8 /* STAR Player */,
 				C9DF92781649046D00F7B5F8 /* Frameworks */,
 				C9DF92761649046D00F7B5F8 /* Products */,
@@ -265,16 +277,20 @@
 				C9DF92A6164904A600F7B5F8 /* play-button.png in Resources */,
 				C9DF92A91649052C00F7B5F8 /* icon.png in Resources */,
 				C9DF92AB1649053100F7B5F8 /* icon-hires.png in Resources */,
+				6C751D8E19837D8200E2EE93 /* PlayButtonSmall.png in Resources */,
 				C9DF92AD1649053B00F7B5F8 /* icon-ipad.png in Resources */,
 				C9DF92AF164905A000F7B5F8 /* icon-ipad-hires.png in Resources */,
 				C9DF92B1164906F200F7B5F8 /* Default@2x.png in Resources */,
+				6C751D8C19837D4E00E2EE93 /* PlayButton.png in Resources */,
 				C9DF92B31649073200F7B5F8 /* Default.png in Resources */,
 				C9DF92B5164907A800F7B5F8 /* Default-568h@2x.png in Resources */,
 				C9DF92B7164908E700F7B5F8 /* Default-Portrait~ipad.png in Resources */,
+				6C751D9119837FDE00E2EE93 /* PauseButton.png in Resources */,
 				C9DF92B91649094000F7B5F8 /* Default-Portrait@2x~ipad.png in Resources */,
 				C9DF92BB164909C300F7B5F8 /* Default-Landscape~ipad.png in Resources */,
 				C9DF92BD16490A0700F7B5F8 /* Default-Landscape@2x~ipad.png in Resources */,
 				C9DF92BF16490F0D00F7B5F8 /* main-bg-iphone.png in Resources */,
+				6C751D9219837FDE00E2EE93 /* PauseButtonSmall.png in Resources */,
 				C9DF92C21649111E00F7B5F8 /* bg-glow.png in Resources */,
 				C9DF92C7164916AD00F7B5F8 /* title.png in Resources */,
 				C9DF92C916491EA400F7B5F8 /* live-bar.png in Resources */,

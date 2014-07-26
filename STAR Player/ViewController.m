@@ -35,8 +35,8 @@ NSString *show_name;
 	// Do any additional setup after loading the view, typically from a nib.
     NSLog(@"View loaded");
     
-    self.playButtonImage = [UIImage imageNamed:@"play-button.png"];
-    self.pauseButtonImage = [UIImage imageNamed:@"pause-button.png"];
+    self.playButtonImage = [UIImage imageNamed:@"PlayButtonSmall.png"];
+    self.pauseButtonImage = [UIImage imageNamed:@"PauseButtonSmall.png"];
     
     [self showInfoUpdater];
     
