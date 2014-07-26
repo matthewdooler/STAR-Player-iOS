@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6C1B2AEE198352EF00A46FFC /* 201407play.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C1B2AED198352EF00A46FFC /* 201407play.png */; };
+		6C1B2AF0198354EA00A46FFC /* 201407playSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C1B2AEF198354EA00A46FFC /* 201407playSmall.png */; };
 		C97740A0166E469B00DAD081 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C977409F166E469B00DAD081 /* AVFoundation.framework */; };
 		C97740A7166E491700DAD081 /* UIDevice+Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = C97740A6166E48ED00DAD081 /* UIDevice+Hardware.m */; };
 		C9DF927A1649046D00F7B5F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DF92791649046D00F7B5F8 /* UIKit.framework */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		6C1B2AED198352EF00A46FFC /* 201407play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 201407play.png; sourceTree = "<group>"; };
+		6C1B2AEF198354EA00A46FFC /* 201407playSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 201407playSmall.png; sourceTree = "<group>"; };
 		C977409F166E469B00DAD081 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C97740A5166E48ED00DAD081 /* UIDevice+Hardware.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Hardware.h"; sourceTree = "<group>"; };
 		C97740A6166E48ED00DAD081 /* UIDevice+Hardware.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Hardware.m"; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				C9DF92A3164904A600F7B5F8 /* pause-button.png */,
 				C9DF92A4164904A600F7B5F8 /* play-button.png */,
 				6C1B2AED198352EF00A46FFC /* 201407play.png */,
+				6C1B2AEF198354EA00A46FFC /* 201407playSmall.png */,
 				C9DF927F1649046D00F7B5F8 /* STAR Player */,
 				C9DF92781649046D00F7B5F8 /* Frameworks */,
 				C9DF92761649046D00F7B5F8 /* Products */,
@@ -253,6 +256,7 @@
 				C9DF92841649046D00F7B5F8 /* InfoPlist.strings in Resources */,
 				C9DF928C1649046D00F7B5F8 /* Default.png in Resources */,
 				C9DF928E1649046D00F7B5F8 /* Default@2x.png in Resources */,
+				6C1B2AF0198354EA00A46FFC /* 201407playSmall.png in Resources */,
 				C9DF92901649046D00F7B5F8 /* Default-568h@2x.png in Resources */,
 				C9DF92961649046D00F7B5F8 /* ViewController_iPhone.xib in Resources */,
 				6C1B2AEE198352EF00A46FFC /* 201407play.png in Resources */,
