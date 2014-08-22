@@ -38,6 +38,8 @@ NSString *show_name;
     self.playButtonImage = [UIImage imageNamed:@"PlayButtonSmall.png"];
     self.pauseButtonImage = [UIImage imageNamed:@"PauseButtonSmall.png"];
     
+    [self updateWebView];
+    
     [self showInfoUpdater];
     
     NSLog(@"View extras loaded");
@@ -80,6 +82,14 @@ NSTimeInterval last_info_check = 0;
     UIImage *image = [UIImage imageWithData:imageData];
     //[self.show_image setImage:image];
     self.show_image.image = image;
+}
+
+//temporary installment
+- (void)updateWebView {
+    NSString *fullURL = @"https://www.standrewsradio.com/_buzzbox/";
+    NSURL *url = [NSURL URLWithString:fullURL];
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    [_webview loadRequest:requestObj];
 }
 
 - (void)updateShowInfo {
@@ -198,6 +208,7 @@ NSTimeInterval last_info_check = 0;
     [_show_image release];
     //[_playback_button release];
     [_show_label release];
+    [_webview release];
     [super dealloc];
 }
 @end

@@ -15,5 +15,6 @@
 
 @property(nonatomic,retain) UIImage *playButtonImage;
 @property(nonatomic,retain) UIImage *pauseButtonImage;
+@property (retain, nonatomic) IBOutlet UIWebView *webview;
 
 @end
