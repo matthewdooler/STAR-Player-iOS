@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UIWebViewDelegate>
 
 @property (retain, nonatomic) IBOutlet UIImageView *show_image;
 @property (retain, nonatomic) IBOutlet UILabel *show_label;
@@ -16,5 +16,7 @@
 @property(nonatomic,retain) UIImage *playButtonImage;
 @property(nonatomic,retain) UIImage *pauseButtonImage;
 @property (retain, nonatomic) IBOutlet UIWebView *webview;
+
+@property (retain, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 @end

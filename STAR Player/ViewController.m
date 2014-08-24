@@ -20,12 +20,9 @@
 @implementation ViewController
 
 
-
 AudioStreamer *streamer;
 BOOL playing;
 NSTimer *myTimer;
-
-
 
 NSString *show_name;
 
@@ -38,7 +35,8 @@ NSString *show_name;
     self.playButtonImage = [UIImage imageNamed:@"PlayButtonSmall.png"];
     self.pauseButtonImage = [UIImage imageNamed:@"PauseButtonSmall.png"];
     
-    [self updateWebView];
+    
+    [self setupWebView];
     
     [self showInfoUpdater];
     
@@ -85,11 +83,13 @@ NSTimeInterval last_info_check = 0;
 }
 
 //temporary installment
-- (void)updateWebView {
+- (void)setupWebView {
     NSString *fullURL = @"https://www.standrewsradio.com/_buzzbox/";
     NSURL *url = [NSURL URLWithString:fullURL];
+    _webview.delegate = self;
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [_webview loadRequest:requestObj];
+    
 }
 
 - (void)updateShowInfo {
@@ -204,11 +204,30 @@ NSTimeInterval last_info_check = 0;
     }
 }
 
+/**
+ * Webページのロード時にインジケータを動かす
+ */
+- (void)webViewDidStartLoad:(UIWebView*)webView
+{
+    NSLog(@"start loading");
+    _activityIndicator.startAnimating;
+}
+
+
+/**
+ * Webページのロード完了時にインジケータを非表示にする
+ */
+- (void)webViewDidFinishLoad:(UIWebView*)webView
+{
+    _activityIndicator.stopAnimating;
+}
+
 - (void)dealloc {
     [_show_image release];
     //[_playback_button release];
     [_show_label release];
     [_webview release];
+    [_activityIndicator release];
     [super dealloc];
 }
 @end
