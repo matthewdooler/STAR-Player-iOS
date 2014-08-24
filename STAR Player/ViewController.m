@@ -92,6 +92,25 @@ NSTimeInterval last_info_check = 0;
     
 }
 
+
+//checks whether the link shoudl be loaded or not
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+{
+    if (navigationType == UIWebViewNavigationTypeLinkClicked || navigationType == UIWebViewNavigationTypeOther)
+    {
+        NSLog(@"Should link be loaded?");
+        NSString* scheme = [[request URL] scheme];
+        if([scheme compare:@"about"] == NSOrderedSame) {
+            return YES;
+        }
+        if([scheme compare:@"http"] == NSOrderedSame) {
+            [[UIApplication sharedApplication] openURL: [request URL]];
+            return NO;
+        }
+    }
+    return YES;
+}
+
 - (void)updateShowInfo {
     
     NSDate *current_date = [NSDate date];
