@@ -229,7 +229,7 @@ NSTimeInterval last_info_check = 0;
 - (void)webViewDidStartLoad:(UIWebView*)webView
 {
     NSLog(@"start loading");
-    _activityIndicator.startAnimating;
+    [_activityIndicator startAnimating];
 }
 
 
@@ -238,7 +238,7 @@ NSTimeInterval last_info_check = 0;
  */
 - (void)webViewDidFinishLoad:(UIWebView*)webView
 {
-    _activityIndicator.stopAnimating;
+    [_activityIndicator stopAnimating];
 }
 
 - (void)dealloc {
